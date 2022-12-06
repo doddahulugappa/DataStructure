@@ -4,6 +4,7 @@ the array is virtually split into the sorted and unsorted part.
 An element from unsorted part is picked and is placed at correct position in the sorted part.
 """
 
+
 class InsertionSort:
     @staticmethod
     def insertion_sort(unsorted_array):
@@ -11,9 +12,9 @@ class InsertionSort:
             k = unsorted_array[i]
             j = i - 1
             while j >= 0 and k < unsorted_array[j]:
-                unsorted_array[j+1] = unsorted_array[j]
+                unsorted_array[j + 1] = unsorted_array[j]
                 j -= 1
-            unsorted_array[j+1] = k
+            unsorted_array[j + 1] = k
 
         return unsorted_array
 

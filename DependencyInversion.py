@@ -1,3 +1,8 @@
+"""
+DIP is basically the idea that high-level modules/implementations
+should not depend on lower level modules/implementations.
+"""
+
 from abc import ABC
 
 

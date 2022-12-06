@@ -2,6 +2,7 @@
 The Interface Segregation Principle (ISP)
 states that a client should not be exposed to methods it doesn't need.
 """
+
 from abc import ABC, abstractmethod
 
 

@@ -11,7 +11,7 @@ from abc import ABC, abstractmethod
 class Notification(ABC):
     @abstractmethod
     def notify(self, message):
-        pass
+        raise NotImplementedError
 
 
 class Email(Notification):
@@ -55,4 +55,5 @@ if __name__ == '__main__':
     notification_manager.send('Hello John')
 
     notification_manager.notification = email_notification
+    # notification_manager = NotificationManager(email_notification)
     notification_manager.send('Hi John')
